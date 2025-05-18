@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="module" src="/src/index.ts"></script>
+    <style href="/src/index.css"></style>
+</head>
+<body>
+<div>
+    <h1>Actions</h1>
+    <h2>Buttons</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button>Filled</mc-button>
+        <mc-button variant="elevated">Elevated</mc-button>
+        <mc-button variant="tonal">Tonal</mc-button>
+        <mc-button variant="outlined">Outlined</mc-button>
+        <mc-button variant="standard">Standard</mc-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button>
+            <mc-icon slot="icon" name="play_arrow"></mc-icon>
+            Play
+        </mc-button>
+        <mc-button variant="elevated">
+            <mc-icon slot="icon" name="play_arrow"></mc-icon>
+            Play
+        </mc-button>
+        <mc-button variant="tonal">
+            <mc-icon slot="icon" name="play_arrow"></mc-icon>
+            Play
+        </mc-button>
+        <mc-button variant="outlined">
+            <mc-icon slot="icon" name="play_arrow"></mc-icon>
+            Play
+        </mc-button>
+        <mc-button variant="standard">
+            <mc-icon slot="icon" name="play_arrow"></mc-icon>
+            Play
+        </mc-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button disabled>Filled</mc-button>
+        <mc-button disabled variant="elevated">Elevated</mc-button>
+        <mc-button disabled variant="tonal">Tonal</mc-button>
+        <mc-button disabled variant="outlined">Outlined</mc-button>
+        <mc-button disabled variant="standard">Standard</mc-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button variant="tonal" size="extraSmall">Extra Small</mc-button>
+        <mc-button variant="tonal">Small</mc-button>
+        <mc-button variant="tonal" size="medium">Medium</mc-button>
+        <mc-button variant="tonal" size="large">Large</mc-button>
+        <mc-button variant="tonal" size="extraLarge">Extra Large</mc-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button toggle>Filled</mc-button>
+        <mc-button toggle variant="elevated">Elevated</mc-button>
+        <mc-button toggle variant="tonal">Tonal</mc-button>
+        <mc-button toggle variant="outlined">Outlined</mc-button>
+    </div>
+    <mc-toggle-button>
+        <mc-icon slot="icon" name="play_arrow"></mc-icon>
+        <mc-icon slot="selected_icon" name="pause"></mc-icon>
+        <span slot="selected_text">Pause</span>
+        Play
+    </mc-toggle-button>
+</div>
+</body>
+</html>
