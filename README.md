@@ -2,9 +2,9 @@
 A Material 3 Impressive component library
 
 ## Installation
-`npm install @xujunhao2010/material-components`
+`npm install @xujunhao2010/material_components`
 or
-`yarn add @xujunhao2010/material-components`
+`yarn add @xujunhao2010/material_components`
 
 ## Usage
 `
