@@ -7,8 +7,13 @@
 
 
 body {
+    transition: 200ms;
     background: rgb(var(--md-sys-color-background));
     color: rgb(var(--md-sys-color-on-background));
+}
+
+*{
+    -webkit-tap-highlight-color: transparent;
 }
 
 /*From MDUI*/

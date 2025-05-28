@@ -65,6 +65,84 @@
         <span slot="selected_text">Pause</span>
         Play
     </mc-toggle-button>
+    <h2>Icon Buttons</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button>play_arrow</mc-icon-button>
+        <mc-icon-button variant="elevated">play_arrow</mc-icon-button>
+        <mc-icon-button variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button variant="outlined">play_arrow</mc-icon-button>
+        <mc-icon-button variant="standard">play_arrow</mc-icon-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button disabled>play_arrow</mc-icon-button>
+        <mc-icon-button disabled variant="elevated">play_arrow</mc-icon-button>
+        <mc-icon-button disabled variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button disabled variant="outlined">play_arrow</mc-icon-button>
+        <mc-icon-button disabled variant="standard">play_arrow</mc-icon-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button variant="tonal" size="extraSmall">play_arrow</mc-icon-button>
+        <mc-icon-button variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button variant="tonal" size="medium">play_arrow</mc-icon-button>
+        <mc-icon-button variant="tonal" size="large">play_arrow</mc-icon-button>
+        <mc-icon-button variant="tonal" size="extraLarge">play_arrow</mc-icon-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button shape="narrow" variant="tonal" size="extraSmall">play_arrow</mc-icon-button>
+        <mc-icon-button shape="narrow" variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button shape="narrow" variant="tonal" size="medium">play_arrow</mc-icon-button>
+        <mc-icon-button shape="narrow" variant="tonal" size="large">play_arrow</mc-icon-button>
+        <mc-icon-button shape="narrow" variant="tonal" size="extraLarge">play_arrow</mc-icon-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button shape="wide" variant="tonal" size="extraSmall">play_arrow</mc-icon-button>
+        <mc-icon-button shape="wide" variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button shape="wide" variant="tonal" size="medium">play_arrow</mc-icon-button>
+        <mc-icon-button shape="wide" variant="tonal" size="large">play_arrow</mc-icon-button>
+        <mc-icon-button shape="wide" variant="tonal" size="extraLarge">play_arrow</mc-icon-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button toggle>play_arrow</mc-icon-button>
+        <mc-icon-button toggle variant="elevated">play_arrow</mc-icon-button>
+        <mc-icon-button toggle variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button toggle variant="outlined">play_arrow</mc-icon-button>
+    </div>
+    <mc-toggle-icon-button>
+        pause
+        <mc-icon slot="selected" name="play_arrow"></mc-icon>
+    </mc-toggle-icon-button>
+    <h2>Button Groups</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button-group style="width: 400px">
+            <mc-button flex>Filled</mc-button>
+            <mc-icon-button shape="narrow" variant="tonal">share</mc-icon-button>
+            <mc-button flex variant="elevated">Elevated</mc-button>
+            <mc-icon-button shape="wide" variant="tonal">play_arrow</mc-icon-button>
+            <mc-icon-button variant="tonal">lyrics</mc-icon-button>
+            <mc-button flex variant="tonal">Tonal</mc-button>
+        </mc-button-group>
+        <mc-button-group>
+            <mc-button size="medium">Filled</mc-button>
+            <mc-icon-button size="medium" shape="narrow" variant="tonal">share</mc-icon-button>
+            <mc-button size="medium" variant="elevated">Elevated</mc-button>
+            <mc-icon-button size="large" shape="wide" variant="tonal">play_arrow</mc-icon-button>
+            <mc-icon-button size="medium" variant="tonal">lyrics</mc-icon-button>
+            <mc-button size="medium" variant="tonal">Tonal</mc-button>
+        </mc-button-group>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-connected-button-group>
+            <mc-button toggle size="medium">Filled</mc-button>
+            <mc-icon-button size="medium" shape="narrow" variant="tonal">share</mc-icon-button>
+            <mc-button size="medium" variant="elevated">Elevated</mc-button>
+            <mc-toggle-icon-button size="medium" shape="wide">
+                pause
+                <mc-icon slot="selected" name="play_arrow" size="24"></mc-icon>
+            </mc-toggle-icon-button>
+            <mc-icon-button toggle size="medium" variant="tonal">lyrics</mc-icon-button>
+            <mc-button size="medium" variant="tonal">Tonal</mc-button>
+        </mc-connected-button-group>
+    </div>
 </div>
 </body>
 </html>

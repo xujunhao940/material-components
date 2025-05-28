@@ -1,5 +1,7 @@
 import './index.css'
 import './components/button'
+import './components/button-groups'
 import './components/icon'
+import './components/icon-button'
 import './components/ripple'
 import './utils/theme'

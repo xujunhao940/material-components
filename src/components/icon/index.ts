@@ -6,7 +6,7 @@ export class Icon extends LitElement {
     @property()
     name: string
     @property({type: Number})
-    size: 20 | 24 | 40 | 48 = 24
+    size: 20 | 24 | 32 | 40 | 48 = 24
 
     static styles = css`
         :host,
@@ -38,7 +38,7 @@ export class Icon extends LitElement {
                     line-height: ${this.size}px;
                 }
             </style>
-            <span class="icon">${this.name}</span>
+            <span class="icon">${this.name?this.name:html`<slot></slot>`}</span>
         `;
     }
 }

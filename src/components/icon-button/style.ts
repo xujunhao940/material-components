@@ -8,12 +8,14 @@ export const style = css`
 
     .button {
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: 200ms;
         position: relative;
         cursor: pointer;
         min-height: 0;
         height: 40px;
-        padding-inline: 12px;
         outline: none;
         border: none;
 
@@ -25,6 +27,7 @@ export const style = css`
             padding-inline: 0;
         }
 
+
         &[disabled] {
             cursor: default;
         }
@@ -32,14 +35,25 @@ export const style = css`
         &[size=extraSmall] {
             font-size: 14px;
             height: 32px;
-            padding-inline: 12px;
+            max-width: 32px;
             border-radius: 16px;
-
-            div {
-                gap: 4px;
-            }
+            gap: 4px;
 
             &[selected] {
+                border-radius: 12px;
+            }
+
+            &[shape=narrow] {
+                max-width: 28px;
+                width: 28px;
+            }
+
+            &[shape=wide] {
+                max-width: 40px;
+                width: 40px;
+            }
+
+            &:active {
                 border-radius: 8px;
             }
         }
@@ -47,14 +61,27 @@ export const style = css`
         &[size=small] {
             font-size: 14px;
             height: 40px;
-            padding-inline: 16px;
+            max-width: 40px;
+            width: 40px;
             border-radius: 20px;
-
-            div {
-                gap: 8px;
-            }
+            gap: 8px;
 
             &[selected] {
+                border-radius: 12px;
+            }
+
+            &[shape=narrow] {
+                max-width: 32px;
+                width: 32px;
+            }
+
+            &[shape=wide] {
+                max-width: 52px;
+                width: 52px;
+            }
+
+
+            &:active {
                 border-radius: 8px;
             }
         }
@@ -62,14 +89,27 @@ export const style = css`
         &[size=medium] {
             font-size: 16px;
             height: 56px;
-            padding-inline: 24px;
+            max-width: 56px;
+            width: 56px;
             border-radius: 28px;
-
-            div {
-                gap: 8px;
-            }
+            gap: 8px;
 
             &[selected] {
+                border-radius: 16px;
+            }
+
+            &[shape=narrow] {
+                max-width: 48px;
+                width: 48px;
+            }
+
+            &[shape=wide] {
+                max-width: 72px;
+                width: 72px;
+            }
+
+
+            &:active {
                 border-radius: 12px;
             }
         }
@@ -77,14 +117,27 @@ export const style = css`
         &[size=large] {
             font-size: 24px;
             height: 96px;
-            padding-inline: 48px;
+            max-width: 96px;
+            width: 96px;
             border-radius: 48px;
-
-            div {
-                gap: 12px;
-            }
+            gap: 12px;
 
             &[selected] {
+                border-radius: 28px;
+            }
+
+            &[shape=narrow] {
+                max-width: 64px;
+                width: 64px;
+            }
+
+            &[shape=wide] {
+                max-width: 128px;
+                width: 128px;
+            }
+
+
+            &:active {
                 border-radius: 16px;
             }
         }
@@ -92,18 +145,31 @@ export const style = css`
         &[size=extraLarge] {
             font-size: 36px;
             height: 136px;
-            padding-inline: 64px;
+            max-width: 136px;
+            width: 136px;
             border-radius: 68px;
-
-            div {
-                gap: 16px;
-            }
+            gap: 16px;
 
             &[selected] {
+                border-radius: 28px;
+            }
+
+            &[shape=narrow] {
+                max-width: 104px;
+                width: 104px;
+            }
+
+            &[shape=wide] {
+                max-width: 184px;
+                width: 184px;
+            }
+
+            &:active {
                 border-radius: 16px;
             }
         }
-
+        
+        
         &[variant=elevated] {
             background: rgb(var(--md-sys-color-surface-variant));
             color: rgb(var(--md-sys-color-primary));

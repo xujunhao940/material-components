@@ -219,13 +219,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material/material-color-utilities@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@material/material-color-utilities@npm:0.3.0"
-  checksum: 10c0/3bef025428b893f2acc9e9e2bd186363a60b7c0836fe43c78222e29fe67dc579618e844f0661a20657ed9f7fd8b94fd43a2961892894d0b6a2ba5264ce2673f8
-  languageName: node
-  linkType: hard
-
 "@npmcli/agent@npm:^3.0.0":
   version: 3.0.0
   resolution: "@npmcli/agent@npm:3.0.0"
@@ -424,6 +417,18 @@ __metadata:
   checksum: 10c0/4c4855f10de7c6c135e0d32ce462419d8abbbc33713b31d294596c0cc34ae1fa6112a2f9da729c8f7a20707782b0d69da3b1f8df6645b0366d08825ca1522e0c
   languageName: node
   linkType: hard
+
+"@xujunhao2010/material_components@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@xujunhao2010/material_components@workspace:."
+  dependencies:
+    "@types/jquery": "npm:^3"
+    jquery: "npm:^3.7.1"
+    lit: "npm:^3.3.0"
+    typescript: "npm:~5.8.3"
+    vite: "npm:^6.3.5"
+  languageName: unknown
+  linkType: soft
 
 "abbrev@npm:^3.0.0":
   version: 3.0.1
@@ -918,19 +923,6 @@ __metadata:
   checksum: 10c0/c40efb5e5296e7feb8e37155bde8eb70bc57d731b1f7d90e35a092fde403d7697c56fb49334d92d330d6f1ca29a98142036d6480a12681133a0a1453164cb2f0
   languageName: node
   linkType: hard
-
-"material_components@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "material_components@workspace:."
-  dependencies:
-    "@material/material-color-utilities": "npm:^0.3.0"
-    "@types/jquery": "npm:^3"
-    jquery: "npm:^3.7.1"
-    lit: "npm:^3.3.0"
-    typescript: "npm:~5.8.3"
-    vite: "npm:^6.3.5"
-  languageName: unknown
-  linkType: soft
 
 "minimatch@npm:^9.0.4":
   version: 9.0.5
