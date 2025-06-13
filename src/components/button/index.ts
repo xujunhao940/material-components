@@ -51,11 +51,15 @@ export class Button extends LitElement {
     onToggled() {
 
     }
+    onUnToggled() {
+
+    }
 
     clickHandler() {
         if (this.toggle) {
             this.selected = !this.selected
             if (this.selected) this.onToggled()
+            if (!this.selected) this.onUnToggled()
         }
     }
 

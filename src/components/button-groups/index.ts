@@ -63,28 +63,43 @@ export class ConnectedButtonGroup extends ButtonGroups {
         `,
     ];
 
+    resetRadius() {
+        for (let i = 0; i < this.children.length; i++) {
+            const child = this.children[i] as Button;
+            const childButton = child.buttonElement;
+            childButton.style.borderRadius = child["borderRadius"]["square"][child.size];
+            if (i === 0) {
+                childButton.style.borderTopLeftRadius = child["borderRadius"]["full"][child.size];
+                childButton.style.borderBottomLeftRadius = child["borderRadius"]["full"][child.size];
+            }
+            if (i === this.children.length - 1) {
+                childButton.style.borderTopRightRadius = child["borderRadius"]["full"][child.size];
+                childButton.style.borderBottomRightRadius = child["borderRadius"]["full"][child.size];
+            }
+        }
+    }
+
     onslotchange = () => {
         (async () => {
             await this.updateComplete;
+            this.resetRadius()
             for (let i = 0; i < this.children.length; i++) {
                 const child = this.children[i] as Button;
                 const childButton = child.buttonElement;
 
-                childButton.style.borderRadius = child["borderRadius"]["square"][child.size];
-                if (i === 0) {
-                    childButton.style.borderTopLeftRadius = child["borderRadius"]["full"][child.size];
-                    childButton.style.borderBottomLeftRadius = child["borderRadius"]["full"][child.size];
-                }
-                if (i === this.children.length - 1) {
-                    childButton.style.borderTopRightRadius = child["borderRadius"]["full"][child.size];
-                    childButton.style.borderBottomRightRadius = child["borderRadius"]["full"][child.size];
+                child.onUnToggled = () => {
+                    console.log("untoggled")
+                    this.resetRadius()
                 }
 
                 child.onToggled = () => {
+                    console.log("toggled")
+                    this.resetRadius()
                     map(this.children, (child: Button) => {
                         child.selected = false
                     });
                     child.selected = true
+                    childButton.style.borderRadius = child["borderRadius"]["full"][child.size];
                 }
             }
         })()

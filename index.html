@@ -131,17 +131,66 @@
         </mc-button-group>
     </div>
     <div style="display: flex;flex-wrap: wrap;">
-        <mc-connected-button-group>
-            <mc-button toggle size="medium">Filled</mc-button>
+        <mc-connected-button-group style="width: 500px">
+            <mc-button flex toggle size="medium">Filled</mc-button>
             <mc-icon-button size="medium" shape="narrow" variant="tonal">share</mc-icon-button>
-            <mc-button size="medium" variant="elevated">Elevated</mc-button>
+            <mc-button flex size="medium" variant="elevated">Elevated</mc-button>
             <mc-toggle-icon-button size="medium" shape="wide">
                 pause
                 <mc-icon slot="selected" name="play_arrow" size="24"></mc-icon>
             </mc-toggle-icon-button>
             <mc-icon-button toggle size="medium" variant="tonal">lyrics</mc-icon-button>
-            <mc-button size="medium" variant="tonal">Tonal</mc-button>
+            <mc-button flex size="medium" variant="tonal">Tonal</mc-button>
         </mc-connected-button-group>
+    </div>
+    <h2>Floating Action Button (FAB)</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-fab>add</mc-fab>
+        <mc-fab color="sc">add</mc-fab>
+        <mc-fab color="tc">add</mc-fab>
+        <mc-fab color="p">add</mc-fab>
+        <mc-fab color="s">add</mc-fab>
+        <mc-fab color="t">add</mc-fab>
+        <mc-fab disabled>add</mc-fab>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-fab size="small">add</mc-fab>
+        <mc-fab size="medium">add</mc-fab>
+        <mc-fab size="large">add</mc-fab>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab color="sc" size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab color="tc" size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab color="p" size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab color="s" size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab color="t" size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab disabled size="small" icon="add">Label</mc-extended-fab>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab size="medium" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab size="large" icon="add">Label</mc-extended-fab>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-fab-menu color="p" icon="add" size="medium">
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+        </mc-fab-menu>
+        <mc-fab-menu color="s" icon="add" size="medium">
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+        </mc-fab-menu>
+        <mc-fab-menu color="t" icon="add" size="large" style="position: fixed;bottom: 0;right: 0">
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+        </mc-fab-menu>
     </div>
 </div>
 </body>

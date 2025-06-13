@@ -1,6 +1,7 @@
 import './index.css'
 import './components/button'
 import './components/button-groups'
+import './components/fab'
 import './components/icon'
 import './components/icon-button'
 import './components/ripple'
