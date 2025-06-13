@@ -1,7 +1,9 @@
 # Material Components
 A Material 3 Impressive component library
 
-![](img/buttonGroups.png "Button Groups")
+![](https://github.com/xujunhao940/material-components/blob/master/img/buttonGroups.png?raw=true "Button Groups")
+
+
 
 ## Installation
 `npm install @xujunhao2010/material_components`
