@@ -192,6 +192,79 @@
             <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
         </mc-fab-menu>
     </div>
+    <h1>Containment</h1>
+    <h2>Lists</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-list style="width: 50%">
+            <mc-list-item text="Item 1"></mc-list-item>
+            <mc-list-item text="Item 2">
+                <mc-avatar slot="head">
+                    <mc-avatar-text text="Junhao Xu"></mc-avatar-text>
+                </mc-avatar>
+            </mc-list-item>
+            <mc-list-item text="Item 3">
+                <mc-icon name="person" slot="head"></mc-icon>
+            </mc-list-item>
+            <mc-list-item text="Item 4" headtype="image">
+                <img src="img/imgThumbnail.png" slot="head"/>
+                <span slot="bottom" style="color: rgba(var(--md-sys-color-shadow), .4)">100+</span>
+            </mc-list-item>
+            <mc-list-item text="Item 5" headtype="video">
+                <img src="img/videoThumbnail.png" slot="head"/>
+            </mc-list-item>
+        </mc-list>
+        <mc-list style="width: 50%">
+            <mc-list-item text="Item 1"
+                          description="DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"
+                          lines="1"></mc-list-item>
+            <mc-list-item text="Item 2" description="Description" lines="1" selected>
+                <mc-icon name="person" slot="head"></mc-icon>
+            </mc-list-item>
+            <mc-list-item text="Item 3" description="Description" lines="1" headtype="image">
+                <img src="img/imgThumbnail.png" slot="head"/>
+                <span slot="bottom" style="color: rgba(var(--md-sys-color-shadow), .4)">100+</span>
+            </mc-list-item>
+            <mc-list-item text="Item 4" description="Description" lines="1" headtype="video">
+                <img src="img/videoThumbnail.png" slot="head"/>
+            </mc-list-item>
+        </mc-list>
+        <mc-list style="width: 50%">
+            <mc-list-item text="Item 1"
+                          description="DescriptionDescription DescriptionDescriptionDescription DescriptionDescriptionDescriptionDescriptionDescription"
+                          lines="2"></mc-list-item>
+            <mc-list-item text="Item 2"
+                          description="DescriptionDescription DescriptionDescriptionDescription DescriptionDescriptionDescriptionDescriptionDescription"
+                          lines="2">
+                <mc-icon name="person" slot="head"></mc-icon>
+            </mc-list-item>
+            <mc-list-item text="Item 3"
+                          description="DescriptionDescription DescriptionDescriptionDescription DescriptionDescriptionDescriptionDescriptionDescription"
+                          lines="2" headtype="image" selected>
+                <img src="img/imgThumbnail.png" slot="head"/>
+                <span slot="bottom" style="color: rgba(var(--md-sys-color-shadow), .4)">100+</span>
+            </mc-list-item>
+            <mc-list-item text="Item 4"
+                          description="DescriptionDescription DescriptionDescriptionDescription DescriptionDescriptionDescriptionDescriptionDescription"
+                          lines="2" headtype="video">
+                <img src="img/videoThumbnail.png" slot="head"/>
+            </mc-list-item>
+        </mc-list>
+    </div>
+    <h2>Avatar</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-avatar>
+            <img src="https://avatars.githubusercontent.com/u/103154953?v=4" alt="avatar">
+        </mc-avatar>
+        <mc-avatar>
+            <mc-avatar-text text="Junhao Xu"></mc-avatar-text>
+        </mc-avatar>
+        <mc-avatar>
+            <mc-avatar-text text="Abcde Fghij Klmno"></mc-avatar-text>
+        </mc-avatar>
+        <mc-avatar size="48">
+            <mc-avatar-text text="abcde"></mc-avatar-text>
+        </mc-avatar>
+    </div>
 </div>
 </body>
 </html>

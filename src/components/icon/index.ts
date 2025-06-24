@@ -38,7 +38,7 @@ export class Icon extends LitElement {
                     line-height: ${this.size}px;
                 }
             </style>
-            <span class="icon">${this.name?this.name:html`<slot></slot>`}</span>
+            <slot class="icon">${this.name}</slot>
         `;
     }
 }
