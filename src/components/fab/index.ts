@@ -52,6 +52,11 @@ export class Fab extends LitElement {
                     background: rgba(var(--md-sys-color-${this.backgroundColor[this.color]}));
                     color: rgba(var(--md-sys-color-on-${this.backgroundColor[this.color]}));
                     border-radius: ${this.borderRadius[this.size]}px;
+
+                    &:hover {
+                        background: color-mix(in srgb, rgba(var(--md-sys-color-${this.backgroundColor[this.color]})), rgba(var(--md-sys-color-on-${this.backgroundColor[this.color]})) 8%);
+                        box-shadow: var(--md-sys-elevation-level4);
+                    }
                 }
             </style>
             <button part="button" type="button" class="button" color=${this.color} size=${this.size}
@@ -105,6 +110,11 @@ export class ExtendedFab extends Fab {
                     border-radius: ${this.borderRadius[this.size]}px;
                     font-size: ${this.fontSize[this.size]}px;
                     line-height: ${this.lineHeight[this.size]}px;
+                    
+                    &:hover {
+                        background: color-mix(in srgb, rgba(var(--md-sys-color-${this.backgroundColor[this.color]})), rgba(var(--md-sys-color-on-${this.backgroundColor[this.color]})) 8%);
+                        box-shadow: var(--md-sys-elevation-level4);
+                    }
                 }
 
                 .icon {
