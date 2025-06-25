@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style href="/src/index.css"></style>
+  <script type="module" crossorigin src="./mc.js"></script>
+  <link rel="stylesheet" crossorigin href="./mc.css">
+</head>
+<body>
+<div>
+    <h1>Actions</h1>
+    <h2>Buttons</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button>Filled</mc-button>
+        <mc-button variant="elevated">Elevated</mc-button>
+        <mc-button variant="tonal">Tonal</mc-button>
+        <mc-button variant="outlined">Outlined</mc-button>
+        <mc-button variant="standard">Standard</mc-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button>
+            <mc-icon slot="icon" name="play_arrow"></mc-icon>
+            Play
+        </mc-button>
+        <mc-button variant="elevated">
+            <mc-icon slot="icon" name="play_arrow"></mc-icon>
+            Play
+        </mc-button>
+        <mc-button variant="tonal">
+            <mc-icon slot="icon" name="play_arrow"></mc-icon>
+            Play
+        </mc-button>
+        <mc-button variant="outlined">
+            <mc-icon slot="icon" name="play_arrow"></mc-icon>
+            Play
+        </mc-button>
+        <mc-button variant="standard">
+            <mc-icon slot="icon" name="play_arrow"></mc-icon>
+            Play
+        </mc-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button disabled>Filled</mc-button>
+        <mc-button disabled variant="elevated">Elevated</mc-button>
+        <mc-button disabled variant="tonal">Tonal</mc-button>
+        <mc-button disabled variant="outlined">Outlined</mc-button>
+        <mc-button disabled variant="standard">Standard</mc-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button variant="tonal" size="extraSmall">Extra Small</mc-button>
+        <mc-button variant="tonal">Small</mc-button>
+        <mc-button variant="tonal" size="medium">Medium</mc-button>
+        <mc-button variant="tonal" size="large">Large</mc-button>
+        <mc-button variant="tonal" size="extraLarge">Extra Large</mc-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button toggle>Filled</mc-button>
+        <mc-button toggle variant="elevated">Elevated</mc-button>
+        <mc-button toggle variant="tonal">Tonal</mc-button>
+        <mc-button toggle variant="outlined">Outlined</mc-button>
+    </div>
+    <mc-toggle-button>
+        <mc-icon slot="icon" name="play_arrow"></mc-icon>
+        <mc-icon slot="selected_icon" name="pause"></mc-icon>
+        <span slot="selected_text">Pause</span>
+        Play
+    </mc-toggle-button>
+    <h2>Icon Buttons</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button>play_arrow</mc-icon-button>
+        <mc-icon-button variant="elevated">play_arrow</mc-icon-button>
+        <mc-icon-button variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button variant="outlined">play_arrow</mc-icon-button>
+        <mc-icon-button variant="standard">play_arrow</mc-icon-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button disabled>play_arrow</mc-icon-button>
+        <mc-icon-button disabled variant="elevated">play_arrow</mc-icon-button>
+        <mc-icon-button disabled variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button disabled variant="outlined">play_arrow</mc-icon-button>
+        <mc-icon-button disabled variant="standard">play_arrow</mc-icon-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button variant="tonal" size="extraSmall">play_arrow</mc-icon-button>
+        <mc-icon-button variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button variant="tonal" size="medium">play_arrow</mc-icon-button>
+        <mc-icon-button variant="tonal" size="large">play_arrow</mc-icon-button>
+        <mc-icon-button variant="tonal" size="extraLarge">play_arrow</mc-icon-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button shape="narrow" variant="tonal" size="extraSmall">play_arrow</mc-icon-button>
+        <mc-icon-button shape="narrow" variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button shape="narrow" variant="tonal" size="medium">play_arrow</mc-icon-button>
+        <mc-icon-button shape="narrow" variant="tonal" size="large">play_arrow</mc-icon-button>
+        <mc-icon-button shape="narrow" variant="tonal" size="extraLarge">play_arrow</mc-icon-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button shape="wide" variant="tonal" size="extraSmall">play_arrow</mc-icon-button>
+        <mc-icon-button shape="wide" variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button shape="wide" variant="tonal" size="medium">play_arrow</mc-icon-button>
+        <mc-icon-button shape="wide" variant="tonal" size="large">play_arrow</mc-icon-button>
+        <mc-icon-button shape="wide" variant="tonal" size="extraLarge">play_arrow</mc-icon-button>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-icon-button toggle>play_arrow</mc-icon-button>
+        <mc-icon-button toggle variant="elevated">play_arrow</mc-icon-button>
+        <mc-icon-button toggle variant="tonal">play_arrow</mc-icon-button>
+        <mc-icon-button toggle variant="outlined">play_arrow</mc-icon-button>
+    </div>
+    <mc-toggle-icon-button>
+        pause
+        <mc-icon slot="selected" name="play_arrow"></mc-icon>
+    </mc-toggle-icon-button>
+    <h2>Button Groups</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-button-group style="width: 400px">
+            <mc-button flex>Filled</mc-button>
+            <mc-icon-button shape="narrow" variant="tonal">share</mc-icon-button>
+            <mc-button flex variant="elevated">Elevated</mc-button>
+            <mc-icon-button shape="wide" variant="tonal">play_arrow</mc-icon-button>
+            <mc-icon-button variant="tonal">lyrics</mc-icon-button>
+            <mc-button flex variant="tonal">Tonal</mc-button>
+        </mc-button-group>
+        <mc-button-group>
+            <mc-button size="medium">Filled</mc-button>
+            <mc-icon-button size="medium" shape="narrow" variant="tonal">share</mc-icon-button>
+            <mc-button size="medium" variant="elevated">Elevated</mc-button>
+            <mc-icon-button size="large" shape="wide" variant="tonal">play_arrow</mc-icon-button>
+            <mc-icon-button size="medium" variant="tonal">lyrics</mc-icon-button>
+            <mc-button size="medium" variant="tonal">Tonal</mc-button>
+        </mc-button-group>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-connected-button-group style="width: 500px">
+            <mc-button flex toggle size="medium">Filled</mc-button>
+            <mc-icon-button size="medium" shape="narrow" variant="tonal">share</mc-icon-button>
+            <mc-button flex size="medium" variant="elevated">Elevated</mc-button>
+            <mc-toggle-icon-button size="medium" shape="wide">
+                pause
+                <mc-icon slot="selected" name="play_arrow" size="24"></mc-icon>
+            </mc-toggle-icon-button>
+            <mc-icon-button toggle size="medium" variant="tonal">lyrics</mc-icon-button>
+            <mc-button flex size="medium" variant="tonal">Tonal</mc-button>
+        </mc-connected-button-group>
+    </div>
+    <h2>Floating Action Button (FAB)</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-fab>add</mc-fab>
+        <mc-fab color="sc">add</mc-fab>
+        <mc-fab color="tc">add</mc-fab>
+        <mc-fab color="p">add</mc-fab>
+        <mc-fab color="s">add</mc-fab>
+        <mc-fab color="t">add</mc-fab>
+        <mc-fab disabled>add</mc-fab>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-fab size="small">add</mc-fab>
+        <mc-fab size="medium">add</mc-fab>
+        <mc-fab size="large">add</mc-fab>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab color="sc" size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab color="tc" size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab color="p" size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab color="s" size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab color="t" size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab disabled size="small" icon="add">Label</mc-extended-fab>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab size="medium" icon="add">Label</mc-extended-fab>
+        <mc-extended-fab size="large" icon="add">Label</mc-extended-fab>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-fab-menu color="p" icon="add" size="medium">
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+        </mc-fab-menu>
+        <mc-fab-menu color="s" icon="add" size="medium">
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+        </mc-fab-menu>
+        <mc-fab-menu color="t" icon="add" size="large" style="position: fixed;bottom: 0;right: 0">
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+            <mc-extended-fab size="small" icon="add">Label</mc-extended-fab>
+        </mc-fab-menu>
+    </div>
+    <h1>Containment</h1>
+    <h2>Lists</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-list style="width: 50%">
+            <mc-list-item text="Item 1"></mc-list-item>
+            <mc-list-item text="Item 2">
+                <mc-avatar slot="head">
+                    <mc-avatar-text text="Junhao Xu"></mc-avatar-text>
+                </mc-avatar>
+            </mc-list-item>
+            <mc-list-item text="Item 3">
+                <mc-icon name="person" slot="head"></mc-icon>
+            </mc-list-item>
+            <mc-list-item text="Item 4" headtype="image">
+                <img src="data:image/png;base64,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" slot="head"/>
+                <span slot="bottom" style="color: rgba(var(--md-sys-color-outline))">99+</span>
+            </mc-list-item>
+            <mc-list-item text="Item 5" headtype="video">
+                <img src="data:image/png;base64,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" slot="head"/>
+            </mc-list-item>
+        </mc-list>
+        <mc-list style="width: 50%">
+            <mc-list-item text="Item 1"
+                          description="DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"
+                          lines="1"></mc-list-item>
+            <mc-list-item text="Item 2" description="Description" lines="1" selected>
+                <mc-icon name="person" slot="head"></mc-icon>
+            </mc-list-item>
+            <mc-list-item text="Item 3" description="Description" lines="1" headtype="image">
+                <img src="data:image/png;base64,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" slot="head"/>
+                <span slot="bottom" style="color: rgba(var(--md-sys-color-outline))">99+</span>
+            </mc-list-item>
+            <mc-list-item text="Item 4" description="Description" lines="1" headtype="video">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOQAAACACAYAAAAbMsXBAAAHbElEQVR4Xu3d6XLbNhSG4dz/bbVpm9VxEsdxnH3futyBOq87nGoOLQkEKeIgeX88k1ZSKGaGnwACB+CN7x//2UjK4UZ8QVI7BlJKxEBKiRhIKREDKSViIKVEDKSUiIGUEjGQUiIGUkrEQEqJGEgpEQMpJWIgpUQMpJSIgZQSMZBSIgZSSsRASokYyB/A1/d/bT6//X7l24e/R++rHwayY5/efNucn15u7v1+urn96/3NnZsnmwe3H28uz14ZzE4ZyE69fPr2KoS3frl3LUL69vnH0d9TbgayQ88evxwF8DoE9tXFu9HfV14GsjMEjK5pDN8ufPbDqy+j4ygnA9kR7hmnhHFwcuuR95SdMJCdIFCnd85GYSt18eiFoeyAgewEgzgxZFO9ufwwOq5yMZAd+PLuz6tR0xiwqei6MmcZj688DGQHnjx4NgpXracPn4+OrzwMZHLMJe6bb6zhqGteBjIxuqpU3sRAzcXgkAM8ORnIxCiLi2FaCoNE8fvUnoFM6v3Lz4t3Vbfd/e3BVTF6/F61ZSATYiSUEdEYoqWdnVzYdU3GQCa0xJxjKecmczGQyVAet8ScYylaYgaP4nmoDQOZCN3HR/fOR6E5NgaP7LrmYCATef3s/VEHcvZx7WQOBjKJpcrjajHfaSvZnoFMYsnyuFrOTbZnIBM4RnlcDYvP2zOQjRGA+388HIWjFTbIiueo9RjIxpgHjKFoiftY7yXbMZCNUS0TQ9Eao73xPLUOA9kQ3VVqSmMgWnt8/6mtZCMGsiHWJWYYzIn4kbB6pw0D2dC7F59GYciCEr54vjo+A9nQsZdY1eKcXJrVhoFsiIs+4z0k0zDOR7ZhIBt7ePfJKBCtMfIbz1PrMJCNrbn2sQTdVbrS8Ty1DgPZGF3DOTuSL81KnbYMZAIfX3+tWukxPA+SLiZrGsF6Sl6reQaI6yLbM5BJMM1AS7lv1JWQUQDOZscUpO96YjKv8R4VN4SMQZpDx+URdw7ktGcgEyFI3L/RbaTVo7XjTx6Uw2PoaucGCRrH5Rgci6VeVOMQVu5hLQLIw0BKiRhIKREDKSViIKVEDKSUiIGUEjGQUiIGUkrEQK6AnQGYiKcSh0XJ8f01UVzA+YCSPf7fCp08DOSRxacgs/6RIMTPHRMVQOxuxw8CZXKU0YH/BudEeR1LwajioZrnxfmbq9I7gksZHqHlONeV6mk5BvLIuLhj7SglcfFzx0KQ5u6KTniH0BJqzn8ILmV+lOTR8g+traGtZyBnoPV4/uT1zm7ori06eI0WKH4eXNS8t8TDbwjG3DBOxaoVQktQDeZ0BrISXcDtsNEtpVB72IuGruq+pyDTVSTQfJYLl1aGLuP2MXktfu8UdDnj966JFnX4N6qMgazEEqh4AYKg0UKUrG8kfASZz17Xks7p2hLyDNuD8G8zlOUMZKXr7g2XNieQtNBZNtDih8HuaxkDWYl7x3jhLY37v/i9pRjJrdk14Bho/X08QRkDWYn7u3jhLY3ubPzeUtl2RZ/z4/IzMZCV1gjknA2nsgWS++p4jhozkJXWuIec89CbXVMurTDiHM9RYwZyAsJBy0MY17rY6eoxzzl1a38D2ScDeQAT9UxxDFMZLS7yoVKGcyCgJRsZZwskc5LxHDVmIA/I9LjxAaOnh3agM5B9MpB70EWNF1YWVArF891mIPtkIA/YV/7WCi3kob1UDWSfDOQBTLBnqXgBYSyZZDeQfTKQBVh5kaHqhXMoLTg3kH0ykIVolVpf4Dx/I57XLgayTwayEAM8LR8bR7c5ntM+BrJPBnKC1oGcUrVjIPtkIAtl6LJOqW01kH0ykAWY84sXWCvsShDP7zoGsk8G8gAu7AwjrANCVjLSaiD7ZCAPsHRuGQayjIHcw9K55RjIMgbygO1NjrOwdO7HZSAP4MJnn1QWC7fsvrL0i3NgL5+Snc8NZJ8M5AR0YQkD0w9rXOx8x/np5dWi6KnP38i2hYeBLGMgK+3al3VJc7aBNJB9MpCV1pibnFIIEDEKm2m6xi08yhjISmvsOsfePfF7S9HFzbRsDPEcNWYgK2XfKBlrP2hnH7eBLGMgK62xDeSce0hk6rbO/XH5WRjISox+xosOdBN5lkXJFAlh2ffZuYEEta/xuC2UlPvJQFZjr9Sh9WE0k2Bx8Q8T9uyjuq+ogHnFYT6R+z0GiQjg9jGXuoiZR23ZUjKgc6iQQf8xkDMwtcDFziR8fA+7CtP3hY2QEuxdD4GtNWzwPOwvy3mtMS1Cj+FQmZ/+ZyCPjG034kV6dnIxabHx0vhuWnDCT/BZ68kgFYGlGojQLjFCS+iXeBL0z8RAHhkX//ZWkrROPXXfCC4tPa0cvQF+YPhBoYs+PGw29gJ4jcKJqY8/kIFcBd3F4SJeuivaEj823P8SPEZ0aXH5k9da9gB6ZiClRAyklIiBlBIxkFIiBlJKxEBKiRhIKREDKSViIKVEDKSUiIGUEjGQUiIGUkrEQEqJGEgpEQMpJWIgpUQMpJSIgZQSMZBSIgZSSsRASokYSCkRAykl8i8rj/PIzQEvVQAAAABJRU5ErkJggg==" slot="head"/>
+            </mc-list-item>
+        </mc-list>
+        <mc-list style="width: 50%">
+            <mc-list-item text="Item 1"
+                          description="DescriptionDescription DescriptionDescriptionDescription DescriptionDescriptionDescriptionDescriptionDescription"
+                          lines="2"></mc-list-item>
+            <mc-list-item text="Item 2"
+                          description="DescriptionDescription DescriptionDescriptionDescription DescriptionDescriptionDescriptionDescriptionDescription"
+                          lines="2">
+                <mc-icon name="person" slot="head"></mc-icon>
+            </mc-list-item>
+            <mc-list-item text="Item 3"
+                          description="DescriptionDescription DescriptionDescriptionDescription DescriptionDescriptionDescriptionDescriptionDescription"
+                          lines="2" headtype="image" selected>
+                <img src="data:image/png;base64,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" slot="head"/>
+                <span slot="bottom" style="color: rgba(var(--md-sys-color-outline))">99+</span>
+            </mc-list-item>
+            <mc-list-item text="Item 4"
+                          description="DescriptionDescription DescriptionDescriptionDescription DescriptionDescriptionDescriptionDescriptionDescription"
+                          lines="2" headtype="video" disabled>
+                <img src="data:image/png;base64,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" slot="head"/>
+            </mc-list-item>
+        </mc-list>
+    </div>
+    <h2>Avatar</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-avatar>
+            <img src="https://avatars.githubusercontent.com/u/103154953?v=4" alt="avatar">
+        </mc-avatar>
+        <mc-avatar>
+            <mc-avatar-text text="Junhao Xu"></mc-avatar-text>
+        </mc-avatar>
+        <mc-avatar>
+            <mc-avatar-text text="Abcde Fghij Klmno"></mc-avatar-text>
+        </mc-avatar>
+        <mc-avatar size="48">
+            <mc-avatar-text text="abcde"></mc-avatar-text>
+        </mc-avatar>
+    </div>
+    <h2>Divider</h2>
+    <mc-divider></mc-divider>
+    <h2>Cards</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-card variant="elevated">
+            <p>Material Components</p>
+        </mc-card>
+        <mc-card variant="filled">
+            <p>Material Components</p>
+        </mc-card>
+        <mc-card variant="outlined">
+            <p>Material Components</p>
+        </mc-card>
+    </div>
+</div>
+</body>
+</html>
