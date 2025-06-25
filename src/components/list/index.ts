@@ -32,7 +32,7 @@ export class ListItem extends LitElement {
 
     render() {
         return html`
-            <div class="container" part="container" selected=${this.selected}
+            <div class="container" part="container" ?selected=${this.selected} ?disabled=${this.disabled}
                  lines=${{0: 'a', 1: 'b', 2: 'c'}[this.lines]} headtype=${this.headType}>
                 <slot class="head" name="head"></slot>
                 <div class="body">

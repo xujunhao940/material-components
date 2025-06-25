@@ -30,7 +30,9 @@ export class ButtonGroups extends LitElement {
                 });
 
                 element.addEventListener("mouseup", () => {
-                    element.shadowRoot.querySelector<HTMLDivElement>("button div").style.paddingInline = "0";
+                    setTimeout(() => {
+                        element.shadowRoot.querySelector<HTMLDivElement>("button div").style.paddingInline = "0";
+                    },200)
                 });
             }
         });
@@ -88,12 +90,10 @@ export class ConnectedButtonGroup extends ButtonGroups {
                 const childButton = child.buttonElement;
 
                 child.onUnToggled = () => {
-                    console.log("untoggled")
                     this.resetRadius()
                 }
 
                 child.onToggled = () => {
-                    console.log("toggled")
                     this.resetRadius()
                     map(this.children, (child: Button) => {
                         child.selected = false

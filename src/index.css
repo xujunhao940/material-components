@@ -12,7 +12,7 @@ body {
     color: rgb(var(--md-sys-color-on-background));
 }
 
-* {
+*:not(.selectable) {
     -webkit-tap-highlight-color: transparent;
     user-select: none;
     -webkit-user-select: none;

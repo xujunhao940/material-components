@@ -56,7 +56,7 @@ export const itemStyle = css`
         }
 
 
-        &[selected=true] {
+        &[selected] {
             background: rgb(var(--md-sys-color-secondary-container));
 
             &:hover {
@@ -87,12 +87,12 @@ export const itemStyle = css`
         &[lines=c] {
             padding: 12px 16px;
             height: 88px;
-            
-            
-            .body{
+
+
+            .body {
                 align-self: center;
             }
-            
+
             .description {
                 -webkit-line-clamp: 2;
             }
@@ -113,6 +113,10 @@ export const itemStyle = css`
             .head::slotted(*) {
                 height: 64px;
             }
+        }
+
+        &[disabled] {
+            background: rgb(var(--md-sys-color-surface));
         }
     }
 `

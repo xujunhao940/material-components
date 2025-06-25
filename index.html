@@ -207,7 +207,7 @@
             </mc-list-item>
             <mc-list-item text="Item 4" headtype="image">
                 <img src="img/imgThumbnail.png" slot="head"/>
-                <span slot="bottom" style="color: rgba(var(--md-sys-color-shadow), .4)">100+</span>
+                <span slot="bottom" style="color: rgba(var(--md-sys-color-outline))">99+</span>
             </mc-list-item>
             <mc-list-item text="Item 5" headtype="video">
                 <img src="img/videoThumbnail.png" slot="head"/>
@@ -222,7 +222,7 @@
             </mc-list-item>
             <mc-list-item text="Item 3" description="Description" lines="1" headtype="image">
                 <img src="img/imgThumbnail.png" slot="head"/>
-                <span slot="bottom" style="color: rgba(var(--md-sys-color-shadow), .4)">100+</span>
+                <span slot="bottom" style="color: rgba(var(--md-sys-color-outline))">99+</span>
             </mc-list-item>
             <mc-list-item text="Item 4" description="Description" lines="1" headtype="video">
                 <img src="img/videoThumbnail.png" slot="head"/>
@@ -241,11 +241,11 @@
                           description="DescriptionDescription DescriptionDescriptionDescription DescriptionDescriptionDescriptionDescriptionDescription"
                           lines="2" headtype="image" selected>
                 <img src="img/imgThumbnail.png" slot="head"/>
-                <span slot="bottom" style="color: rgba(var(--md-sys-color-shadow), .4)">100+</span>
+                <span slot="bottom" style="color: rgba(var(--md-sys-color-outline))">99+</span>
             </mc-list-item>
             <mc-list-item text="Item 4"
                           description="DescriptionDescription DescriptionDescriptionDescription DescriptionDescriptionDescriptionDescriptionDescription"
-                          lines="2" headtype="video">
+                          lines="2" headtype="video" disabled>
                 <img src="img/videoThumbnail.png" slot="head"/>
             </mc-list-item>
         </mc-list>
@@ -264,6 +264,20 @@
         <mc-avatar size="48">
             <mc-avatar-text text="abcde"></mc-avatar-text>
         </mc-avatar>
+    </div>
+    <h2>Divider</h2>
+    <mc-divider></mc-divider>
+    <h2>Cards</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-card variant="elevated">
+            <p>Material Components</p>
+        </mc-card>
+        <mc-card variant="filled">
+            <p>Material Components</p>
+        </mc-card>
+        <mc-card variant="outlined">
+            <p>Material Components</p>
+        </mc-card>
     </div>
 </div>
 </body>
