@@ -13,7 +13,7 @@ export class Divider extends LitElement {
                     background: rgba(var(--md-sys-color-outline-variant));
                 }
             </style>
-            <div class="container"></div>
+            <div class="container" part="container"></div>
         `
     }
 }

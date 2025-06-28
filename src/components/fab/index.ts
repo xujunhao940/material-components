@@ -220,7 +220,7 @@ export class FabMenu extends LitElement {
                     <slot></slot>
                 </div>
                 <mc-fab class="close-button" size=${this.open ? "small" : this.size} color=${this.color}
-                        @click=${this.clickHandler} ${ref(this.closeButtonRef)}>
+                        @mouseup=${this.clickHandler} ${ref(this.closeButtonRef)}>
                     ${this.open ? "close" : this.icon}
                 </mc-fab>
             </div>

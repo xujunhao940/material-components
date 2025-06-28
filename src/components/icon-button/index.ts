@@ -43,7 +43,7 @@ export class IconButton extends Button {
             <button part="button" type="button" class="button" variant=${this.variant} size=${this.size}
                     ?toggle=${this.toggle}
                     ?selected=${this.selected} shape=${this.shape}
-                    ?disabled=${this.disabled} @click=${this.clickHandler}>
+                    ?disabled=${this.disabled} @mouseup=${this.clickHandler}>
                 <div>
                     <mc-icon size=${this.iconSize[this.size]}>
                         <slot></slot>
@@ -70,7 +70,7 @@ export class ToggleIconButton extends IconButton {
             <button part="button" type="button" class="button" variant=${this.variant} size=${this.size}
                     ?toggle=${this.toggle}
                     ?selected=${this.selected} shape=${this.shape}
-                    ?disabled=${this.disabled} @click=${this.clickHandler}>
+                    ?disabled=${this.disabled} @mouseup=${this.clickHandler}>
                 <div>
                     ${this.selected ? html`
                         <mc-icon size=${this.iconSize[this.size]}>

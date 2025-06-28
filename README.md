@@ -14,6 +14,20 @@ Preview: https://xujunhao940.github.io/material-components/dist/
 <mc-button>Label</mc-button>
 `
 
+
+## Using CDN
+
+```html
+
+<head>
+    <script src="https://unpkg.com/@xujunhao2010/material_components@latest/dist/mc.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@xujunhao2010/material_components@latest/dist/mc.css">
+</head>
+<body>
+<mc-button>Button</mc-button>
+</body>
+```
+
 ## Adaptability
 
 Best (interpolate-size): 70.58% of all users

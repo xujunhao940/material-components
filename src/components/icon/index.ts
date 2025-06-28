@@ -9,20 +9,11 @@ export class Icon extends LitElement {
     size: 20 | 24 | 32 | 40 | 48 = 24
 
     static styles = css`
-        :host,
-                * {
-                    -webkit-tap-highlight-color: transparent;
-                    user-select: none;
-                    -webkit-user-select: none;
-                    -webkit-user-drag: none;
-                    -webkit-touch-callout: none;
-                }
-
-                .icon {
-                    font-family: "Material Symbols Outlined";
-                    -webkit-user-select: none;
-                    user-select: none;
-                }
+        .icon {
+            font-family: "Material Symbols Outlined";
+            -webkit-user-select: none;
+            user-select: none;
+        }
     `
 
     render() {

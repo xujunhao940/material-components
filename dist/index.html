@@ -280,6 +280,81 @@
             <p>Material Components</p>
         </mc-card>
     </div>
+    <h1>Selection</h1>
+    <h2>Menus</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-menu>
+            <mc-menu-item>
+                <mc-icon slot="head">cut</mc-icon>
+                <span>Cut</span>
+                <span slot="bottom">⌘X</span>
+            </mc-menu-item>
+            <mc-menu-item>
+                <mc-icon slot="head">content_copy</mc-icon>
+                <span>Copy</span>
+                <span slot="bottom">⌘C</span>
+            </mc-menu-item>
+            <mc-menu-item disabled>
+                <mc-icon slot="head">content_paste</mc-icon>
+                <span>Paste</span>
+                <span slot="bottom">⌘V</span>
+            </mc-menu-item>
+            <mc-divider></mc-divider>
+            <mc-menu-item>
+                <mc-icon slot="head">cloud</mc-icon>
+                <span>Web Clipboard</span>
+            </mc-menu-item>
+        </mc-menu>
+        <mc-menu selects="multiple">
+            <mc-menu-item value="a">
+                <span>A</span>
+            </mc-menu-item>
+            <mc-menu-item value="b">
+                <span>B</span>
+            </mc-menu-item>
+            <mc-menu-item value="c">
+                <span>C</span>
+            </mc-menu-item>
+            <mc-divider></mc-divider>
+            <mc-menu-item value="d">
+                <span>D</span>
+            </mc-menu-item>
+        </mc-menu>
+        <mc-menu selects="single">
+            <mc-menu-item value="a">
+                <span>A</span>
+            </mc-menu-item>
+            <mc-menu-item value="b">
+                <span>B</span>
+            </mc-menu-item>
+            <mc-menu-item value="c">
+                <span>C</span>
+            </mc-menu-item>
+            <mc-divider></mc-divider>
+            <mc-menu-item value="d">
+                <span>D</span>
+            </mc-menu-item>
+        </mc-menu>
+    </div>
+    <h2>Switch</h2>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-switch></mc-switch>
+        <mc-switch checked></mc-switch>
+        <mc-switch disabled></mc-switch>
+        <mc-switch disabled checked></mc-switch>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-switch mode="never"></mc-switch>
+        <mc-switch mode="never" checked></mc-switch>
+        <mc-switch mode="never" disabled></mc-switch>
+        <mc-switch mode="never" disabled checked></mc-switch>
+    </div>
+    <div style="display: flex;flex-wrap: wrap;">
+        <mc-switch mode="always" icon="security"></mc-switch>
+        <mc-switch mode="always" checked icon="security"></mc-switch>
+        <mc-switch mode="always" disabled icon="security"></mc-switch>
+        <mc-switch mode="always" disabled checked icon="security"></mc-switch>
+    </div>
 </div>
 </body>
 </html>
